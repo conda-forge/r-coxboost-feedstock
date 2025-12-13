@@ -1,4 +1,4 @@
-{% set version = '1.4' %}
+{% set version = "1.5.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/CoxBoost_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/CoxBoost/CoxBoost_{{ version }}.tar.gz
-  sha256: 0f6a5f77629b50a0937688184feaa6ae98bd22e6453762971a8fe48f9855b3af
+  sha256: 4d6de9cf6326a8c3421061d248bb9ab6746e8cd65ef10e3fa8bfe6680fb6d75a
 
 build:
-  number: 1008
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -49,8 +49,7 @@ test:
 about:
   home: https://CRAN.R-project.org/package=CoxBoost
   license: GPL-2.0-or-later
-  summary: This package provides routines for fitting Cox models by likelihood based boosting
-    for a single endpoint or in presence of competing risks
+  summary: This package provides routines for fitting Cox models by likelihood based boosting for a single endpoint or in presence of competing risks
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2

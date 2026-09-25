@@ -1,4 +1,4 @@
-{% set version = "1.5.1" %}
+{% set version = "1.5.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/CoxBoost_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/CoxBoost/CoxBoost_{{ version }}.tar.gz
-  sha256: 4d6de9cf6326a8c3421061d248bb9ab6746e8cd65ef10e3fa8bfe6680fb6d75a
+  sha256: dbe99adceca538fb70f33282825f5284749ff1642dc3ac935b5adbd0285b4dd8
 
 build:
   number: 0
